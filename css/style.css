@@ -1,10 +1,11 @@
 body {
     background-image: url('../images/background.jpeg');
     background-size: cover;
+    background-repeat: no-repeat;
 }
 
 #header-nav {
-    background-image: linear-gradient(to right, #5c94e9c5, rgb(2, 123, 179));
+    background-image: linear-gradient(to left, #5c94e9c5, rgb(2, 123, 179));
     border: 0;
     border-radius: 0;
     height: 50px;
