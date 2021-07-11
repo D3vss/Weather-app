@@ -23,7 +23,7 @@ searchButton.addEventListener('click', () => {
     } else {
         input.value = '';
 
-        endpoint = `http://api.openweathermap.org/data/2.5/weather?q=${query}&units=metric&appid=7851dcb348444eabd1dfea3ea021b989`;
+        endpoint = `https://api.openweathermap.org/data/2.5/weather?q=${query}&units=metric&appid=7851dcb348444eabd1dfea3ea021b989`;
         spinner.style.display = 'block';
         infoContainer.classList.add("weather-displayed");
         displayWeather();
@@ -72,7 +72,7 @@ async function displayWeather() {
     let iconid = info['icon'];
     city.innerHTML = '<i class="fa fa-map-marker" aria-hidden="true"></i> ' + info['city'];
     desc.innerHTML = '<i class="fa fa-question-circle" aria-hidden="true"></i> ' + info['desc'].charAt(0).toUpperCase() + info['desc'].slice(1);
-    icon.setAttribute('src', `http://openweathermap.org/img/w/${iconid}.png`)
+    icon.setAttribute('src', `https://openweathermap.org/img/w/${iconid}.png`)
     temp.innerHTML = '<i class="fa fa-thermometer-empty" aria-hidden="true"></i> ' + info['temp'] + "°C"
 
     console.log('weather displayed successfully!')
