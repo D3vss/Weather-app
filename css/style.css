@@ -2,6 +2,9 @@ body {
     background-image: url('../images/background.jpeg');
     background-size: cover;
     background-repeat: no-repeat;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 #header-nav {
@@ -23,7 +26,7 @@ body {
 .content {
     padding: 5px;
     margin-top: 50px;
-    width: 500px;
+    max-width: 500px;
     color: aliceblue;
 }
 
@@ -78,13 +81,12 @@ body {
 }
 
 #footer {
-    position: absolute;
     text-align: center;
     background-color: rgb(17, 17, 17);
     color: aliceblue;
     width: 100%;
     height: 50px;
-    bottom: 0;
+    margin-top: auto;
 }
 
 
