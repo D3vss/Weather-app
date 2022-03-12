@@ -14,7 +14,7 @@ The API I'm calling is from **[OpenWeather](https://openweathermap.org/)** (I re
 
 ## Main Functions:
 #### getJSONFile() : 
-This function is intended to get the data from the API and transform it to a JSON file that I can later exploit. Kind of like the ```JS getJSON() ``` in jQuery.
+This function is intended to get the data from the API and transform it to a JSON file that I can later exploit. Kind of like the ```javascript getJSON() ``` in jQuery.
 
 ```javascript
 function getJSONFile(url) {
