@@ -22,7 +22,7 @@ function getJSONFile(url)
 
 The function's argument is the endpoint we're trying to get the data from. The endpoint is customised according to the search (we add the city name). 
 
-### displayWeather ():
+#### displayWeather ():
 And then comes the function that manipulates data coming from ```getJSONFile()``` then displays it. I could have done a better job tbh.
 
 ```javascript
