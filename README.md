@@ -17,27 +17,10 @@ The API I'm calling is from **[OpenWeather](https://openweathermap.org/)** (I re
 This function is intended to get the data from the API and transform it to a JSON file that I can later exploit. Kind of like the ```getJSON()``` in jQuery.
 
 ```javascript
-function getJSONFile(url) {
-    let request = new XMLHttpRequest();
-    request.open('GET', url, true);
-    let data;
-    return new Promise((resolve, reject) => {
-        request.onload = function() {
-            if (this.status >= 200 && this.status < 400) {
-                data = JSON.parse(this.response);
-                spinner.style.display = 'none';
-                err.style.display = 'none'
-
-                resolve(data);
-            } else {
-                spinner.style.display = 'none';
-                err.style.display = 'block'
-            }
-        }
-        request.send();
-    })
-}
+function getJSONFile(url) 
 ```
+
+The function's argument is the endpoint we're trying to get the data from. The endpoint is customised according to the search (we add the city name). 
 
 ### displayWeather ():
 And then comes the function that manipulates data coming from ```getJSONFile()``` then displays it. I could have done a better job tbh.
