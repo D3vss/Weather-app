@@ -38,3 +38,11 @@ function getJSONFile(url) {
     })
 }
 ```
+
+### displayWeather ():
+And then comes the function that manipulates data coming from ```getJSONFile()``` then displays it. I could have done a better job tbh.
+
+```javascript
+async function displayWeather()
+
+```
